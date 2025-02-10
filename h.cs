@@ -21,9 +21,7 @@ namespace yefgyigweig
 			
 			long sum_s = 0;
 			for (int i = 0; i < 10; i++) {
-				for (int j = 9; j > -1; j--) {
-					sum_s += matrix[i, j];
-				}
+				sum_s += matrix[i, 9 - i];
 			}
 			
 			Console.WriteLine(sum_p + " " + sum_p / 10);
